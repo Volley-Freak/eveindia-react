@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cabin", sans-serif;
+  font-size: 16px;
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(10%);
+  }
+  75% {
+    transform: translateX(-5%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+  }
+  50% {
+    transform: translateX(-10%);
+  }
+  75% {
+    transform: translateX(5%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+.slide-in-left {
+  animation: slideInLeft 0.6s ease-in-out;
+}
+.slide-in-right {
+  animation: slideInRight 0.6s ease-in-out;
+}
+.navbar{
+  padding: 20px 10px;
+}
+.fa-bars{
+  font-size: 2rem;
+}
+.navbar{
+  position: fixed;
+  z-index: 10;
+  top: 0;
+}
+
+ul.navbar-ul {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 0 0;
+}
+.nav-item {
+  margin: 0px 20px;
+  text-transform: uppercase;
+}
+.show ul li {
+  margin: 5px;
+}
+.nav-link {
+  color: black !important;
+}
+.model {
+  color: red !important;
+}
+.dropdown-menu li {
+  margin: 5px 0;
+}
+.dropdown-menu li a {
+  color: white;
+}
+.dropdown-item {
+  color: white;
+  text-transform: capitalize;
+  font-family: "Alef", sans-serif;
+  font-size: 0.8rem;
+}
+.nav-link:hover {
+  color: red !important;
+}
+ @media screen and (max-width:992px) {
+   .dealer-btn{
+     display: none;
+   }
+ }

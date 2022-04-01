@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+.product{
+    height: 50vh;
+    width: 100%;
+}
+.product-container{
+    margin-top: 2rem;
+}
+.product-container .heading{
+    font-size: 3rem;
+    line-height: 45px;
+    font-weight: 600;
+    color: black;
+    display: inline-block;
+    padding: 2rem 0;
+    background: url(/src/assets/bg.png) no-repeat;
+    background-position: 5% 0%;
+}
+.product-info {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* padding: 0 5em; */
+}
+.product-info .title{
+    font-size: 3.2em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+
+@media screen and (max-width:960px) {
+    .product{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.speed-max-speed{
+    display: flex;
+    margin: 1em 0;
+}
+.speed-max-speed hr{
+    width: 5px;
+    height: 70px;
+    background-color: black;
+    margin: 0 3em;
+}
+
+.speed h3,.max-speed h3{
+    font-size: 2.4em;
+}
+.speed p,.max-speed p{
+    margin-top: -1em;
+    text-align: center;
+    font-size: 0.9em;
+}
+.product .description{
+    font-size: 1.3em;
+    letter-spacing: 1px;
+    line-height: 33px;
+}
+.product-btn{
+    margin-top: 2em;
+    font-size: 1.3em;
+    width: 250px;
+    height: 50px;
+    color: white;
+    background-color: #BB2F37;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.product-btn:hover{
+    color: #BB2F37;
+    font-weight: 500;
+    border: 2px solid #BB2F37;
+    background: transparent;
+    transition: all 0.3s ease;
+
+}
